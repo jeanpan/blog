@@ -1,0 +1,11 @@
+{
+  "name": "hexo-theme-pi",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jeanpan",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

@@ -1,0 +1,71 @@
+// Theme
+$theme-color-config: hexo-theme-config('theme.color');
+
+$theme-color-map: (
+  'Default': #F23A3A,
+  'Green': #7FB800,
+  'Orange': #FAA916,
+  'Pink': #FF69A0,
+  'Blue': #009DDC
+);
+
+@if not(map-has-key($theme-color-map, $theme-color-config)) {
+  $theme-color-config: 'Default';
+}
+
+$theme-color: map-get($theme-color-map, $theme-color-config);
+
+// Define defaults for each variable.
+$base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$base-font-size: 14px !default;
+$base-font-weight: 400 !default;
+$small-font-size: $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit: 30px !default;
+
+$text-color: #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color: $theme-color;
+
+$grey-color: #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark: darken($grey-color, 25%) !default;
+
+// Width of the content area
+$content-width: 800px !default;
+
+$on-palm: 600px !default;
+$on-laptop: 800px !default;
+
+// Code
+$code-color: #c7254e !default;
+$code-font-size: 13px !default;
+$code-font-family: 'Source Code Pro', monospace;
+$code-highlight-color: (
+  comment: #93a1a1,
+  keyword: #859900,
+  number: #2aa198,
+  name: #268bd2,
+  attribute: #b58900,
+  symbol: #cb4b16,
+  built_in: #dc322f
+) !default;
+$code-background: #f5f5f5 !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}

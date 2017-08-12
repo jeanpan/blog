@@ -1,0 +1,140 @@
+code, pre {
+  padding: 7px;
+  font-size: $code-font-size;
+  font-family: $code-font-family;
+  background: $code-background;
+}
+
+code {
+  padding: 3px 5px;
+  color: $code-color;
+}
+
+.highlight {
+  margin: 1em 0;
+  overflow-x: auto;
+  position: relative;
+
+  table {
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 2px 7px;
+    font-size: $code-font-size;
+    font-weight: bold;
+    color: darken($grey-color, 10%);
+    background: darken($code-background, 3%);
+    z-index: 20;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+    & > a {
+      position: absolute;
+      right: 0;
+      display: inline-box;
+      margin-right: 7px;
+      font-weight: 400;
+
+      &:hover {
+        text-decoration: none;
+        border: 0;
+      }
+    }
+  }
+
+  pre, code {
+    border-radius: 0;
+    border: 0;
+  }
+
+  .code {
+    pre {
+      margin: 0;
+      padding: 10px;
+      border-left: 1px solid #eee;
+    }
+  }
+
+  .gutter {
+    width: 10px;
+    color: $grey-color;
+
+    pre {
+      margin: 0;
+      padding: 10px;
+      text-align: right;
+    }
+  }
+
+  .line {
+    // Fix code block null line height and
+    // Synchronous gutter and code line highly.
+    height: round($code-font-size * 1.5);
+  }
+
+  table, tr, td {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .code {
+    .comment,
+    .quote {
+      color: map-get($code-highlight-color, comment);
+    }
+
+    .keyword,
+    .selector-tag,
+    .addition {
+      color: map-get($code-highlight-color, keyword);
+    }
+
+    .number,
+    .string,
+    .meta .meta-string,
+    .literal,
+    .doctag,
+    .regexp {
+      color: map-get($code-highlight-color, number);
+    }
+
+    .title,
+    .section,
+    .name,
+    .selector-id,
+    .selector-class {
+      color: map-get($code-highlight-color, title);
+    }
+
+    .attribute,
+    .attr,
+    .variable,
+    .template-variable,
+    .class .title,
+    .type {
+      color: map-get($code-highlight-color, attribute);
+    }
+
+    .symbol,
+    .bullet,
+    .subst,
+    .meta,
+    .meta .keyword,
+    .selector-attr,
+    .selector-pseudo,
+    .link {
+      color: map-get($code-highlight-color, symbol);
+    }
+
+    .built_in,
+    .deletion {
+      color: map-get($code-highlight-color, built_in);
+    }
+  }
+}
