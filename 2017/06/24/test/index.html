@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="">
+
+  <head>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="On the road.">
+
+<meta name="description" content="中文 Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Qu">
+<meta name="keywords" content="test,hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="test">
+<meta property="og:url" content="https://jeanpan.github.io/2017/06/24/test/index.html">
+<meta property="og:site_name" content="On the road.">
+<meta property="og:description" content="中文 Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Qu">
+<meta property="og:updated_time" content="2017-07-16T15:30:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="test">
+<meta name="twitter:description" content="中文 Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Qu">
+
+
+  <link rel="alternate" href="/atom.xml" title="On the road." type="application/atom+xml">
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">  
+
+
+
+  <link rel="icon" href="/favicon.ico">
+
+
+<link rel="stylesheet" type="text/css" href="/blog/css/style.css?v=" />  
+
+
+  
+
+
+
+
+    <title> test · On the road. </title>  
+
+  </head>
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/blog/.">On the road.</a>
+
+    
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+  
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">test</h1>
+    <p class="post-meta">
+      <time datetime="1498306305000" itemprop="datePublished">
+        Jun 24, 2017
+      </time>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>中文</p>
+<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">throttle</span>(<span class="params">fn, time</span>) </span>&#123;</div><div class="line">  <span class="keyword">let</span> start = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">let</span> context = <span class="keyword">this</span>;</div><div class="line">    <span class="keyword">let</span> args = <span class="built_in">arguments</span>;</div><div class="line">    <span class="keyword">let</span> current = <span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line">    <span class="comment">// reach to a time, trigger the function</span></div><div class="line">    <span class="keyword">if</span> (current - start &gt;= time) &#123;</div><div class="line">      <span class="comment">// console.log('start', start);</span></div><div class="line">      <span class="comment">// console.log('current', current);</span></div><div class="line">      fn.apply(context, args);</div><div class="line">      start = current;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+  </div>
+
+  
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/test/"><i class="fa fa-tag" aria-hidden="true"></i> test</a>
+          
+            <a href="/blog/tags/hexo/"><i class="fa fa-tag" aria-hidden="true"></i> hexo</a>
+          
+        </div>
+      
+    </footer>
+  
+
+  
+<script type="text/javascript">
+  var disqus_config = function () {
+    this.page.url = 'https://jeanpan.github.io/2017/06/24/test/';
+    this.page.identifier = '2017/06/24/test/';
+    this.page.title = 'test';
+  };
+  (function() {
+  var d = document, s = d.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = '//jeanpan314.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+
+</article>
+
+
+      </div>
+    </main>
+
+    
+  <div class="comments" id="comments">
+    <div class="wrapper">
+      
+        <div id="disqus_thread">
+          <noscript>
+            Please enable JavaScript to view the
+            <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          </noscript>
+        </div>
+      
+    </div>
+  </div>
+
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <p>
+      &copy; 2017 Jean Pan. 
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Themed by <a href="http://hexo.io/" target="_blank">Pi</a> with <i class="fa fa-heart" aria-hidden="true"></i>.
+    </p>
+
+  </div>
+
+</footer>
+
+  </body>
+  
+</html>
